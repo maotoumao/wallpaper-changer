@@ -47,6 +47,15 @@ export default merge(baseConfig, {
     ],
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.node$/,
+        loader: 'node-loader',
+      },
+    ],
+  },
+
   plugins: [
     new BundleAnalyzerPlugin({
       analyzerMode: process.env.ANALYZE === 'true' ? 'server' : 'disabled',

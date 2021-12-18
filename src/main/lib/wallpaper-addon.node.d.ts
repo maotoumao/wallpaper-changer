@@ -1,0 +1,2 @@
+export function setBackgroundWindow(windowName: string): IWallpaperAddOnParam.ISuccess | (IWallpaperAddOnParam.IWindowMeta & IWallpaperAddOnParam.ISuccess);
+export function resumeBackgroundWindow(windowName: string, windowMeta: IWallpaperAddOnParam.IWindowMeta): IWallpaperAddOnParam.ISuccess;
